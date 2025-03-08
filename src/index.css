@@ -7,7 +7,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: #18181b;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.circular--square{
+
+  border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; 
+}
+
+@media  only screen and (max-width: 600px) {
+  
+  
+}
+
+/* Target the dropdown list (the options container) */
+#type option {  /* Or a more specific selector if needed */
+  background-color: rgb(107, 5, 251); /* Background color of options */
+}
+
+
+.go_to_top
+
+{
+
+  right:20px;
+
+  bottom: 20px;
+
+  position: fixed;
+
+  background-color: #d40d0d;
+
+  height: 40px;
+
+  width:40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: #000000;
+
+  font-size: 18px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  z-index: 999;
+
+}
+
+.go_to_top i{
+
+  animation: goto 1.2s linear infinite alternate-reverse;
+
+}
+
+@keyframes goto {
+
+  0%{
+
+    transform: translateY(-5px);
+
+  }
+
+  100%{
+
+    transform: translateY(5px);
+
+  }
+
 }
