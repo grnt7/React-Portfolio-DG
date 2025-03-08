@@ -1,7 +1,7 @@
-import React from 'react';
+//import React from 'react';
 
 import FullScreenSection from './FullScreenSection';
-import { Box, Grid, Flex, Heading, Link,  useBreakpointValue } from '@chakra-ui/react';
+import { Grid,  Heading,  } from '@chakra-ui/react';
 
 import Card from './Card';
 

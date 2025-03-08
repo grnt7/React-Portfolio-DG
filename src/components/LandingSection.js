@@ -1,5 +1,5 @@
-import React from "react";
-import { Avatar, Heading, HStack, VStack,Image, Text} from "@chakra-ui/react";
+//import React from "react";
+import { Heading, HStack, VStack,Image, Text} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Photo from "../images/DGBWHatSQ.jpg";
 
