@@ -1,7 +1,7 @@
 import { Box, Flex, HStack, Heading, Image, Text, Link, Spacer } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-import React from "react";
+//import React from "react";
 
 const Card = ({ title, description, imageSrc, link, pdfPath1 }) => {
 	console.log("Link prop:", link); // Add this line

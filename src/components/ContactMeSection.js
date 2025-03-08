@@ -2,7 +2,7 @@
 
 
 
-import React, { useState, useEffect } from "react";
+import  { useState, } from "react";
 import {
   Box,
   Button,
@@ -17,10 +17,10 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import { useAlertContext } from "../context/alertContext";
+//import { useAlertContext } from "../context/alertContext";
 
 const ContactMeSection = () => {
-  const { onOpen } = useAlertContext();
+ //const { onOpen } = useAlertContext();
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
@@ -34,47 +34,11 @@ const ContactMeSection = () => {
     setErrors({ ...errors, [event.target.name]: "" }); // Clear error on change
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
 
-    let newErrors = {};
-    if (!formData.firstName) {
-      newErrors.firstName = "Required";
-    }
-    if (!formData.email || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
-      newErrors.email = "Invalid email address";
-    }
-    if (!formData.comment) {
-      newErrors.comment = "Required";
-    }
-
-    setErrors(newErrors);
-
-    if (Object.keys(newErrors).length === 0) {  // No errors, proceed with submission
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...formData }),
-      })
-        .then(() => {
-          onOpen("success", "Message sent successfully!");
-          setFormData({ firstName: "", email: "", type: "hireMe", comment: "" }); // Reset form
-          setErrors({}); // Clear any previous errors
-        })
-        .catch((error) => {
-          onOpen("error", "Failed to send message.");
-          console.error("Error:", error);
-        });
-    }
-  };
   
   const inputWidth = useBreakpointValue({ base: "full", md: "full" }); //Responsive width Corrected line
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  };
+  
 
   return (
     <FullScreenSection
@@ -154,3 +118,6 @@ const ContactMeSection = () => {
 };
 
 export default ContactMeSection;
+
+
+ 
