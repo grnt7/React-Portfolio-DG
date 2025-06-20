@@ -36,7 +36,7 @@ const projects = [
 			'CSS Flexbox Photo Gallery of Cats. Project created as part of Freecodecamp Responsive Design Course.',
 		getImageSrc: () => require('../images/CATSGALLERY.jpg'),
 		
-		link: 	"https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-flexbox-by-building-a-photo-gallery/step-2"  // Store as a string
+		link: require("../mp4/Flexbox PhotoGallery.mp4")  // Store as a string
 		 
 			
 	},
@@ -45,7 +45,7 @@ const projects = [
 		description:
 			'Learn CSS Grid. HTML and CSS Typography project created within Freecodecamp responsive website design course.',
 		getImageSrc: () => require('../images/CSSgrid MagazineReducedscale 2.jpg'),
-		link: "https://www.freecodecamp.org/learn/full-stack-developer/workshop-magazine/step-79" 
+		link: require('../images/CSS Grid Magazine.png')
 			
 			
 	}	

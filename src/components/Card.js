@@ -37,8 +37,9 @@ const Card = ({ title, description, imageSrc, link, pdfPath1 }) => {
 					fontSize="sm"
 					display="flex"
 					alignItems="center"
+					
 				>
-					See More <ExternalLinkIcon />
+					See More  <ExternalLinkIcon ml={2}  />
 				</Link>
 			)}
 		</HStack>
