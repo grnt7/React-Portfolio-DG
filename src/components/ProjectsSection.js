@@ -10,7 +10,7 @@ const projects = [
 	{
 		title: 'React App and Website',
         description:
-            'Table Booking website that is fully functional, created in React as Capstone project completed in Meta Front-End Developer course.',
+            'Table Booking website that is fully functional, created in React as Capstone project completed in Meta Front-End Developer course. Technologies Used: React, JavaScript, HTML, CSS, Netlify Deployment ',
         getImageSrc: () => require('../images/Frame 1 (2) copy.jpg'),
 		 link:'https://little-lemon-booking-capstone.netlify.app/' 
 		 
