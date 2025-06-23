@@ -86,6 +86,7 @@ const GoToTop = () => {
           }}
       >
           <FaArrowUp style={{ fontSize: '1.2rem' }} /> {/* Style the icon */}
+         
       </div>
 
         )

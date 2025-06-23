@@ -31,21 +31,21 @@ const projects = [
 	},
 	
 	{
-		title: 'Photo Gallery',
+		title: 'Airbnb Clone',
 		description:
-			'CSS Flexbox Photo Gallery of Cats. Project created as part of Freecodecamp Responsive Design Course.',
-		getImageSrc: () => require('../images/CATSGALLERY.jpg'),
+			'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction. Technologies Used: HTML, CSS, JavaScript, React, Nextjs, Vercel.',
+		getImageSrc: () => require('../images/Screenshot_airbnb-clone1-Page1.jpeg'),
 		
-		link: require("../mp4/Flexbox PhotoGallery.mp4")  // Store as a string
+		link: 'https://airbnb-clone1-two.vercel.app/'  // Store as a string
 		 
 			
 	},
 	{
-		title: 'Typography',
+		title: 'Netflix Clone',
 		description:
-			'Learn CSS Grid. HTML and CSS Typography project created within Freecodecamp responsive website design course.',
-		getImageSrc: () => require('../images/CSSgrid MagazineReducedscale 2.jpg'),
-		link: require('../images/CSS Grid Magazine.png')
+			'Developed and deployed a clone of the Netflix frontend, focusing on product display, and user interaction. React, Redux, Google Auth, Firebase, TMDB, Stripe Checkout & Webhooks, Redux, Netlify Deployment',
+		getImageSrc: () => require('../images/netflix-clone-23a24.web.app_profilescreen.png'),
+		link: 'https://netflix-clone-23a24.web.app//'
 			
 			
 	}	
