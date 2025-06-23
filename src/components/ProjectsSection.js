@@ -29,7 +29,7 @@ const projects = [
 	{
 		title: 'Airbnb Clone',
 		shortDescription:'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction.',
-		technologies:['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Vercel Deployment'],
+		technologies:['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'Calendar Picker','Mapbox API', 'Next.js', 'Vercel Deployment'],
 		githubLink: 'https://github.com/grnt7/airbnb-clone1',
 		liveDemoLink:'https://airbnb-clone1-two.vercel.app/' ,
 		getImageSrc: () => require('../images/Screenshot_airbnb-clone1-Page1.jpeg'),
@@ -42,7 +42,7 @@ const projects = [
 		title: 'Netflix Clone',
 		shortDescription:
 			'Developed and deployed a clone of the Netflix frontend, focusing on product display, and user interaction. React, Redux, Google Auth, Firebase, TMDB, Stripe Checkout & Webhooks, Redux, Firebase Deployment',
-		technologies: ['React', 'Redux', 'Axios', 'Firebase', 'TMDB API', 'Stripe Checkout', 'Chakra UI'],
+		technologies: ['React', 'Redux', 'Axios', 'Firestore', 'TMDB API', 'Stripe Checkout & Webhooks', 'Google Auth', 'Firebase Deployment'],
 		githubLink: 'https://github.com/grnt7/Netflixy-demo',
 		liveDemoLink: 'https://netflix-clone-23a24.web.app//',
 		getImageSrc: () => require('../images/netflix-clone-23a24.web.app_profilescreen.png'),
