@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import FullScreenSection from './FullScreenSection';
 import { Grid,  Heading,  } from '@chakra-ui/react';

@@ -2,7 +2,7 @@ import { Box, Flex, Image, Heading, Text, Link, HStack, Spacer, Tag, TagLabel, }
 import { ExternalLinkIcon } from '@chakra-ui/icons'; // Assuming FaGithub is imported or similar icon for GitHub
 import { FaGithub } from 'react-icons/fa';
 
-import React from "react";
+
 
 const Card = ({
     title,
