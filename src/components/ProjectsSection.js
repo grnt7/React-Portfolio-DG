@@ -1,4 +1,4 @@
-//import React from 'react';
+import React from 'react';
 
 import FullScreenSection from './FullScreenSection';
 import { Grid,  Heading,  } from '@chakra-ui/react';
@@ -7,45 +7,46 @@ import Card from './Card';
 
 
 const projects = [
-	{
-		title: 'React-powered Restaurant Reservation Website',
-        description:
-            'Restaurant Booking website that is fully functional, Built using React for Capstone project completed in Meta Front-End Developer course. Technologies Used: React, JavaScript, HTML, CSS, Netlify Deployment ',
+    {
+        title: 'React-powered Restaurant Reservation Website',
+        shortDescription: 'A fully functional restaurant booking website built using React for a Capstone project completed in the Meta Front-End Developer course.',
+        technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Netlify Deployment'],
+        githubLink: 'https://github.com/grnt7/Little-Lemon-Capstone',
+        liveDemoLink: 'https://little-lemon-booking-capstone.netlify.app/',
         getImageSrc: () => require('../images/Frame 1 (2) copy.jpg'),
-		 link:'https://little-lemon-booking-capstone.netlify.app/' 
-		 
-		
-
-       
-		
-  },
+    },
 	
 	{
-		title: 'Dog Walking App',
-    description: 'UX Design Project with full case study created within Google UX Design professional course 🔥️',
-    getImageSrc: () => require('../images/iPhone 14 Pro Mockup-Recovered.jpg'),
-    link: 'https://docs.google.com/presentation/d/e/2PACX-1vSA5FI8jpBOk-UhOrHp15AkuB-N1hPRkT3tJaGC7p6rBfXPwu1dUmPbzzlQZANu4J3VvfczSLT2ujOd/pub?start=false&loop=false&delayms=3000', // Store as a string
+		title: 'Dog Walking App Mock-Up UX Design',
+		shortDescription: 'Designed and created a mock-up for a dog walking app, focusing on user experience and interface design.',
+		technologies: ['Figma', 'Canva', 'Google Slides','User research fundamentals', 'interaction design', 'information architecture', 'prototyping', 'accessibility principles', 'WCAG standards'],
+		link: '/Woof Walkers Dog Walking App - Case study slide deck Dog Walker App and Website  (1).pdf', // <---PDF link
+        // No githubLink for this project
 		 
-		
-		 
+		getImageSrc: () => require('../images/iPhone 14 Pro Mockup-Recovered.jpg'),
 	},
 	
 	{
 		title: 'Airbnb Clone',
-		description:
-			'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction. Technologies Used: HTML, CSS, JavaScript, React, Nextjs, Vercel Deployment.',
+		shortDescription:'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction.',
+		technologies:['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Vercel Deployment'],
+		githubLink: 'https://github.com/grnt7/airbnb-clone1',
+		liveDemoLink:'https://airbnb-clone1-two.vercel.app/' ,
 		getImageSrc: () => require('../images/Screenshot_airbnb-clone1-Page1.jpeg'),
 		
-		link: 'https://airbnb-clone1-two.vercel.app/'  // Store as a string
+		
 		 
 			
 	},
 	{
 		title: 'Netflix Clone',
-		description:
+		shortDescription:
 			'Developed and deployed a clone of the Netflix frontend, focusing on product display, and user interaction. React, Redux, Google Auth, Firebase, TMDB, Stripe Checkout & Webhooks, Redux, Firebase Deployment',
+		technologies: ['React', 'Redux', 'Axios', 'Firebase', 'TMDB API', 'Stripe Checkout', 'Chakra UI'],
+		githubLink: 'https://github.com/grnt7/Netflixy-demo',
+		liveDemoLink: 'https://netflix-clone-23a24.web.app//',
 		getImageSrc: () => require('../images/netflix-clone-23a24.web.app_profilescreen.png'),
-		link: 'https://netflix-clone-23a24.web.app//'
+		
 			
 			
 	}	
@@ -73,13 +74,20 @@ const ProjectsSection = () => {
                 }}
                 gap={8}
             >
-                {projects.map((project) => (
+                {projects.map((project, index) => (
                     <Card
-					key={project.title}
-					title={project.title}
-					description={project.description}
-					imageSrc={project.getImageSrc()}
-					link={project.link}
+                        key={index} // Always essential for lists in React
+                        title={project.title}
+                        shortDescription={project.shortDescription} // <--- Pass the NEW prop name
+                        imageSrc={project.getImageSrc()}
+                        technologies={project.technologies}     // <--- Pass the NEW prop name
+                        githubLink={project.githubLink}         // <--- Pass the NEW prop name
+                        liveDemoLink={project.liveDemoLink}     // <--- Pass the NEW prop name
+						link={project.link}                 // <--- Pass the 'link' prop here
+        				pdfPath1={project.pdfPath1}         // Pass if it exists for the project
+                       
+                        // Only pass pdfPath1 if it exists in your project object:
+                        // pdfPath1={project.pdfPath1}
                     />
                 ))}
             </Grid>
