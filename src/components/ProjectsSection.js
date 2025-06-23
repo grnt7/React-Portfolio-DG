@@ -33,7 +33,7 @@ const projects = [
 	{
 		title: 'Airbnb Clone',
 		description:
-			'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction. Technologies Used: HTML, CSS, JavaScript, React, Nextjs, Vercel.',
+			'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction. Technologies Used: HTML, CSS, JavaScript, React, Nextjs, Vercel Deployment.',
 		getImageSrc: () => require('../images/Screenshot_airbnb-clone1-Page1.jpeg'),
 		
 		link: 'https://airbnb-clone1-two.vercel.app/'  // Store as a string
