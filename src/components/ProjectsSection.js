@@ -43,7 +43,7 @@ const projects = [
 	{
 		title: 'Netflix Clone',
 		description:
-			'Developed and deployed a clone of the Netflix frontend, focusing on product display, and user interaction. React, Redux, Google Auth, Firebase, TMDB, Stripe Checkout & Webhooks, Redux, Netlify Deployment',
+			'Developed and deployed a clone of the Netflix frontend, focusing on product display, and user interaction. React, Redux, Google Auth, Firebase, TMDB, Stripe Checkout & Webhooks, Redux, Firebase Deployment',
 		getImageSrc: () => require('../images/netflix-clone-23a24.web.app_profilescreen.png'),
 		link: 'https://netflix-clone-23a24.web.app//'
 			
