@@ -8,7 +8,7 @@ import Card from './Card';
 
 const projects = [
 	{
-		title: 'Restaurant Table Reservation System',
+		title: 'React-powered Restaurant Reservation Website',
         description:
             'Restaurant Booking website that is fully functional, Built using React for Capstone project completed in Meta Front-End Developer course. Technologies Used: React, JavaScript, HTML, CSS, Netlify Deployment ',
         getImageSrc: () => require('../images/Frame 1 (2) copy.jpg'),
