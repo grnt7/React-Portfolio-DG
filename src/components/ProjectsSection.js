@@ -44,7 +44,7 @@ const projects = [
 			'Developed and deployed a clone of the Netflix frontend, focusing on product display, and user interaction. React, Redux, Google Auth, Firebase, TMDB, Stripe Checkout & Webhooks, Redux, Firebase Deployment',
 		technologies: ['React', 'Redux', 'Axios', 'Firestore', 'TMDB API', 'Stripe Checkout & Webhooks', 'Google Auth', 'Firebase Deployment'],
 		githubLink: 'https://github.com/grnt7/Netflixy-demo',
-		liveDemoLink: 'https://netflix-clone-23a24.web.app//',
+		liveDemoLink: 'https://neflix-build-demo.vercel.app/',
 		getImageSrc: () => require('../images/netflix-clone-23a24.web.app_profilescreen.png'),
 		
 			
