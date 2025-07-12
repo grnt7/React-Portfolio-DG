@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.579c8553.css",
+    "main.js": "/React-Portfolio/static/js/main.8742198d.js",
+    "static/js/453.7824d571.chunk.js": "/React-Portfolio/static/js/453.7824d571.chunk.js",
+    "static/media/netflix-clone-23a24.web.app_profilescreen.png": "/React-Portfolio/static/media/netflix-clone-23a24.web.app_profilescreen.8dbe90419637966a21cc.png",
+    "static/media/Screenshot_airbnb-clone1-Page1.jpeg": "/React-Portfolio/static/media/Screenshot_airbnb-clone1-Page1.32589a2ea555615a312c.jpeg",
+    "static/media/Frame 1 (2) copy.jpg": "/React-Portfolio/static/media/Frame 1 (2) copy.e14ae50b0e2cc321ef7b.jpg",
+    "static/media/DGBWHatSQ.jpg": "/React-Portfolio/static/media/DGBWHatSQ.40ae8150efd4b90a40d8.jpg",
+    "static/media/iPhone 14 Pro Mockup-Recovered.jpg": "/React-Portfolio/static/media/iPhone 14 Pro Mockup-Recovered.7d061ac35193a0fa856f.jpg",
+    "index.html": "/React-Portfolio/index.html",
+    "main.579c8553.css.map": "/React-Portfolio/static/css/main.579c8553.css.map",
+    "main.8742198d.js.map": "/React-Portfolio/static/js/main.8742198d.js.map",
+    "453.7824d571.chunk.js.map": "/React-Portfolio/static/js/453.7824d571.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.579c8553.css",
+    "static/js/main.8742198d.js"
+  ]
+}
