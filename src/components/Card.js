@@ -18,13 +18,13 @@ const Card = ({
     // console.log("Link prop:", link); // This line should be removed or updated
 
     return (
-        <Flex direction="column" w="100%" bg="white" color="black" borderRadius="lg" overflow="hidden" boxShadow="md" _hover={{ boxShadow: "lg", textDecoration: "none" }}>
+       <Flex direction="column" w="100%" bg="white" color="black" borderRadius="lg" overflow="hidden" boxShadow="md" _hover={{ boxShadow: "lg", textDecoration: "none" }}>
             <Box overflow="hidden" w="100%">
-                <Image src={imageSrc} alt={title} objectFit="cover" w="100%" h="100%" aspectRatio="2/2" loading="lazy" scale="auto" />
-            </Box>
-            <Flex direction="column" flexGrow={1} px={4} py={2} overflow="hidden">
-                <Box align="start">
-                    <Heading as="h3" size="md">
+            <Image src={imageSrc} alt={title} objectFit="cover" w="100%" h="100%" aspectRatio="2/2" loading="lazy" scale="auto" />
+        </Box>
+          <Flex direction="column" flexGrow={1} px={4} py={2} overflow="hidden">
+                <Box align="start" flexGrow={1}>
+                    <Heading as="h3" size="md"mt={6}>
                         {title}
                     </Heading>
                     {/* Render the short description */}
@@ -33,18 +33,19 @@ const Card = ({
                     </Text>
 
                     {/* Technologies Used Section */}
-                    {technologies && technologies.length > 0 && (
-                        <Box mt={3}> {/* Margin top for spacing */}
-                            <Text fontSize="sm" fontWeight="bold">Technologies Used:</Text>
-                            <HStack spacing={1} wrap="wrap" mt={1}> {/* Use HStack for inline tags, wrap for multi-line */}
-                                {technologies.map((tech, techIndex) => (
-                                    <Tag key={techIndex} size="sm" variant="solid" colorScheme="blue">
-                                        <TagLabel>{tech}</TagLabel>
-                                    </Tag>
-                                ))}
-                            </HStack>
-                        </Box>
-                    )}
+                   {technologies && technologies.length > 0 && (
+    
+    <Box align="start" mb={2} mt={6}> 
+        <Text fontSize="sm" fontWeight="bold">Technologies Used:</Text>
+        <HStack spacing={1} wrap="wrap" mt={1}>
+            {technologies.map((tech, techIndex) => (
+                <Tag key={techIndex} size="sm" variant="solid" colorScheme="blue">
+                    <TagLabel>{tech}</TagLabel>
+                </Tag>
+            ))}
+        </HStack>
+    </Box>
+)}
                 </Box>
                 <Spacer />
                <HStack w="100%" justifyContent="space-between" mt={4}>

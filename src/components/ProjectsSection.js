@@ -28,7 +28,7 @@ const projects = [
 	
 	{
 		title: 'Airbnb Clone',
-		shortDescription:'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction.',
+		shortDescription:'Developed and deployed a clone of the Airbnb frontend, focusing on product display, and user interaction. A full-stack accommodation booking app inspired by Airbnb, built with Next.js and deployed on Vercel for fast server-side rendering.',
 		technologies:['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'Calendar Picker','Mapbox API', 'Next.js', 'Vercel Deployment'],
 		githubLink: 'https://github.com/grnt7/airbnb-clone1',
 		liveDemoLink:'https://airbnb-clone1-two.vercel.app/' ,
